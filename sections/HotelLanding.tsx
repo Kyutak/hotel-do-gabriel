@@ -7,11 +7,13 @@ import Header from './Header';
 import Hero from './Hero';
 import Intro from './Intro';
 import Accommodations from './Accommodations';
+import StayEssentials from './StayEssentials';
 import Gallery from './Gallery';
 import Amenities from './Amenities';
 import Restaurant from './Restaurant';
 import Location from './Location';
 import Footer from './Footer';
+import WhatsAppFloat from './WhatsAppFloat';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,18 +37,22 @@ export default function HotelLanding() {
   }, []);
 
   return (
-    <div ref={pageRef} className="min-h-screen overflow-hidden bg-[#f7f5f1] text-[#302b27]">
-      <Header />
-      <main>
-        <Hero />
-        <Intro />
-        <Accommodations />
-        <Gallery />
-        <Amenities />
-        <Restaurant />
-        <Location />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <div ref={pageRef} className="min-h-screen overflow-hidden bg-[#f7f5f1] text-[#302b27]">
+        <Header />
+        <main>
+          <Hero />
+          <Intro />
+          <Accommodations />
+          <StayEssentials />
+          <Gallery />
+          <Amenities />
+          <Restaurant />
+          <Location />
+        </main>
+        <Footer />
+      </div>
+      <WhatsAppFloat />
+    </>
   );
 }

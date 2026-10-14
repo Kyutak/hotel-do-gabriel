@@ -1,24 +1,24 @@
 const galleryImages = [
   {
-    src: '/images/accommodations/ChatGPT_Image_27_de_set._de_2026,_23_12_01.png',
-    alt: 'Recepção do Hotel do Gabriel',
-    label: 'Recepção',
+    src: '/images/restaurante.png',
+    alt: 'Restaurante do Hotel do Gabriel',
+    label: 'Restaurante',
     className: 'md:col-span-2 md:row-span-2 aspect-square',
   },
   {
-    src: '/images/accommodations/ChatGPT_Image_27_de_set._de_2026,_22_53_10.png',
-    alt: 'Restaurante do Hotel do Gabriel',
-    label: 'Restaurante',
+    src: '/images/accommodations/recep.png',
+    alt: 'Recepção do Hotel do Gabriel',
+    label: 'Recepção',
     className: 'aspect-square',
   },
   {
-    src: '/images/accommodations/ChatGPT_Image_27_de_set._de_2026,_23_04_01.png',
+    src: '/images/accommodations/recep1.png',
     alt: 'Hall e escadaria do hotel',
     label: 'Ambientes',
     className: 'aspect-square',
   },
   {
-    src: '/images/accommodations/ChatGPT_Image_27_de_set._de_2026,_22_45_02.png',
+    src: '/images/accommodations/quarto2-grid.png',
     alt: 'Detalhes de uma suíte',
     label: 'Detalhes da suíte',
     className: 'md:col-span-2 aspect-[2/1]',

@@ -1,11 +1,211 @@
 import { ArrowUpRight, BedDouble, Check } from 'lucide-react';
 
 const rooms = [
-  { title: 'Suíte Dupla', capacity: 'Até 2 hóspedes', image: '/images/accommodations/ChatGPT_Image_25_de_set._de_2026,_21_51_27.png', beds: '1 cama de casal', description: 'Acomodação confortável e aconchegante, ideal para uma ou duas pessoas.', price: 'A partir de R$ 160', features: ['Banheiro privativo', 'Ar-condicionado', 'Frigobar', 'Smart TV', 'Wi-Fi'] },
-  { title: 'Suíte Tripla', capacity: 'Até 3 hóspedes', image: '/images/accommodations/WhatsApp_Image_2026-09-24_at_17.18.36.jpeg', beds: '1 casal + 1 solteiro', description: 'Espaçosa e confortável para casais, famílias pequenas ou hóspedes a trabalho.', price: 'A partir de R$ 290', features: ['Banheiro privativo', 'Ar-condicionado', 'Frigobar', 'Smart TV', 'Wi-Fi'] },
-  { title: 'Suíte Quádrupla', capacity: 'Até 4 hóspedes', image: '/images/accommodations/ChatGPT_Image_27_de_set._de_2026,_22_46_01.png', beds: '1 casal + 2 solteiros', description: 'Uma acomodação ampla para famílias ou pequenos grupos viajando juntos.', price: 'A partir de R$ 380', features: ['Banheiro privativo', 'Ar-condicionado', 'Frigobar', 'Smart TV', 'Wi-Fi'] },
+  {
+    title: 'Suíte Dupla',
+    capacity: 'Até 2 hóspedes',
+    images: [
+      '/images/accommodations/quarto1.png',
+      '/images/accommodations/quarto1-2.png',
+      '/images/accommodations/banheiro.png',
+    ],
+    beds: '1 cama de casal',
+    description:
+      'Este quarto duplo possui ar condicionado, guarda-roupa e TV de tela plana. A unidade tem 1 cama.',
+    price: 'A partir de R$ 160',
+    features: [
+      'Ar-condicionado',
+      'Frigobar',
+      'Smart TV',
+      'Wi-Fi',
+      'Banheiro privativo',
+    ],
+  },
+  {
+    title: 'Suíte Tripla',
+    capacity: 'Até 3 hóspedes',
+    images: [
+      '/images/accommodations/quarto3.png',
+      '/images/accommodations/quarto2-2.png',
+      '/images/accommodations/banheiro.png',
+    ],
+    beds: '1 casal + 1 solteiro',
+    description:
+      'Este quarto triplo, que inclui uma varanda, também dispõe de ar condicionado, guarda-roupa e TV de tela plana. A unidade possui 2 camas.',
+    price: 'A partir de R$ 290',
+    features: [
+      'Ar-condicionado',
+      'Frigobar',
+      'Smart TV',
+      'Wi-Fi',
+      'Banheiro privativo',
+    ],
+  },
+  {
+    title: 'Suíte Quádrupla',
+    capacity: 'Até 4 hóspedes',
+    images: [
+      '/images/accommodations/quarto3.png',
+      '/images/accommodations/quarto3-2.png',
+      '/images/accommodations/banheiro.png',
+    ],
+    beds: '1 casal + 2 solteiros',
+    description:
+      'Este quarto quádruplo dispõe de ar condicionado, guarda-roupa, TV de tela plana e varanda. A unidade oferece 3 camas.',
+    price: 'A partir de R$ 380',
+    features: [
+      'Ar-condicionado',
+      'Frigobar',
+      'Smart TV',
+      'Wi-Fi',
+      'Banheiro privativo',
+    ],
+  },
 ];
 
 export default function Accommodations() {
-  return <section id="acomodacoes" className="bg-[#e9e3dc] px-6 py-24 lg:px-10 lg:py-36"><div className="mx-auto max-w-[1160px]"><div className="flex flex-col justify-between gap-8 md:flex-row md:items-end" data-reveal><div><p className="section-kicker">Para cada tipo de viagem</p><h2 className="mt-5 font-display text-5xl leading-none text-[#382322] sm:text-6xl">Escolha seu <em className="text-[#9d6c4b]">refúgio</em>.</h2></div><p className="max-w-sm text-sm leading-6 text-[#746b63]">Três suítes pensadas para você chegar, relaxar e seguir sua viagem ainda melhor.</p></div><div className="mt-14 grid gap-6 md:grid-cols-3" data-reveal>{rooms.map((room) => { const reserveUrl = `https://wa.me/5543996677263?text=${encodeURIComponent(`Olá, gostaria de falar sobre a ${room.title} do Hotel do Gabriel.`)}`; return <article key={room.title} className="group flex flex-col bg-[#f7f5f1] shadow-[0_16px_40px_rgba(69,42,31,0.06)] transition-transform duration-500 hover:-translate-y-2"><div className="relative h-64 overflow-hidden bg-[#382322]"><img src={room.image} alt={room.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-[#241313]/75 via-transparent to-transparent" /><div className="absolute bottom-5 left-5 text-white"><span className="text-[10px] uppercase tracking-[0.2em] text-[#eacaa0]">{room.capacity}</span><h3 className="mt-1 font-display text-3xl">{room.title}</h3></div></div><div className="flex flex-1 flex-col p-6"><div className="flex items-start justify-between gap-3"><span className="flex items-center gap-2 text-xs text-[#746b63]"><BedDouble size={17} className="text-[#a8754d]" /> {room.beds}</span><span className="whitespace-nowrap font-display text-xl text-[#9d6c4b]">{room.price.replace('A partir de ', '')}</span></div><p className="mt-5 min-h-[72px] text-sm leading-6 text-[#655c56]">{room.description}</p><div className="mt-5 border-t border-[#ddd3ca] pt-5">{room.features.map((feature) => <span key={feature} className="mb-2 flex items-center gap-2 text-xs text-[#746b63]"><Check size={13} className="text-[#a8754d]" />{feature}</span>)}</div><a href={reserveUrl} target="_blank" rel="noreferrer" className="mt-5 flex items-center justify-between border border-[#ad805d] px-4 py-3 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#55332b] transition-colors hover:bg-[#55332b] hover:text-white">Agendar esta suíte <ArrowUpRight size={16} /></a></div></article>; })}</div></div></section>;
+  return (
+    <section
+      id="acomodacoes"
+      className="bg-[#e9e3dc] px-6 py-24 lg:px-10 lg:py-36"
+    >
+      <div className="mx-auto max-w-[1160px]">
+        {/* Cabeçalho */}
+        <div data-reveal>
+          <p className="section-kicker">
+            Escolha o que mais combina com você
+          </p>
+
+          <h2 className="mt-5 max-w-full font-display text-5xl leading-[1.05] text-[#382322] sm:text-6xl">
+            Encontre a suíte ideal{' '}
+            <em className="font-normal text-[#9d6c4b]">
+              para sua estadia
+            </em>
+            .
+          </h2>
+        </div>
+
+        {/* Grid de acomodações */}
+        <div className="mt-14 grid items-stretch gap-7 md:grid-cols-2 lg:grid-cols-3">
+          {rooms.map((room) => {
+            const reserveUrl = `https://wa.me/5543996677263?text=${encodeURIComponent(
+              `Olá, gostaria de falar sobre a ${room.title} do Hotel do Gabriel.`
+            )}`;
+
+            return (
+              <article
+                key={room.title}
+                className="group flex min-w-0 flex-col overflow-hidden bg-[#f7f5f1] shadow-[0_16px_40px_rgba(69,42,31,0.06)] transition-transform duration-500 hover:-translate-y-1"
+                data-reveal
+              >
+                {/* Grid de três imagens */}
+                <div className="relative">
+                  <div className="grid h-[250px] grid-cols-2 grid-rows-2 gap-1 overflow-hidden bg-[#382322] sm:h-[280px]">
+                    <div className="row-span-2 overflow-hidden">
+                      <img
+                        src={room.images[0]}
+                        alt={`${room.title} - foto principal`}
+                        loading="lazy"
+                        className={`h-full w-full object-cover transition-transform duration-700 ${
+                          room.title === 'Suíte Tripla'
+                            ? '-scale-x-100'
+                            : 'group-hover:scale-[1.03]'
+                        }`}
+                      />
+                    </div>
+
+
+                    <div className="overflow-hidden">
+                      <img
+                        src={room.images[1]}
+                        alt={`${room.title} - segunda foto`}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                    </div>
+
+                    <div className="overflow-hidden">
+                      <img
+                        src={room.images[2]}
+                        alt={`${room.title} - terceira foto`}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Identificação sobre a imagem */}
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#241313]/85 via-transparent to-black/5" />
+
+                  <div className="pointer-events-none absolute bottom-5 left-5">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-[#eacaa0]">
+                      {room.capacity}
+                    </span>
+
+                    <h3 className="mt-1 font-display text-3xl text-white">
+                      {room.title}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Informações */}
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
+                  <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#ddd3ca] pb-5">
+                    <span className="flex items-center gap-2 text-xs text-[#746b63]">
+                      <BedDouble
+                        size={17}
+                        className="shrink-0 text-[#a8754d]"
+                      />
+                      {room.beds}
+                    </span>
+
+                    <span className="font-display text-xl text-[#9d6c4b]">
+                      {room.price.replace('A partir de ', '')}
+                    </span>
+                  </div>
+
+                  <p className="mt-5 text-sm leading-7 text-[#655c56]">
+                    {room.description}
+                  </p>
+
+                  {/* Instalações */}
+                  <div className="mt-6 border-t border-[#ddd3ca] pt-5">
+                    <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#9d6c4b]">
+                      Instalações
+                    </p>
+
+                    <ul className="space-y-3">
+                      {room.features.map((feature) => (
+                        <li
+                          key={feature}
+                          className="flex items-start gap-2.5 text-xs leading-5 text-[#746b63]"
+                        >
+                          <Check
+                            size={14}
+                            className="mt-0.5 shrink-0 text-[#a8754d]"
+                          />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Reserva */}
+                  <a
+                    href={reserveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-7 flex min-h-12 items-center justify-between gap-3 border border-[#ad805d] px-4 py-3 text-[10px] font-semibold uppercase tracking-[0.1em] text-[#55332b] transition-colors duration-300 hover:bg-[#55332b] hover:text-white"
+                  >
+                    <span>Agendar esta suíte</span>
+                    <ArrowUpRight size={16} className="shrink-0" />
+                  </a>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
 }
