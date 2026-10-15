@@ -13,11 +13,11 @@ import {
 } from 'lucide-react';
 
 const amenities = [
-  { icon: Wifi, label: 'Wi-Fi grátis' },
+  { icon: Wifi, label: 'Wi-Fi gratuito' },
   { icon: Snowflake, label: 'Ar-condicionado' },
-  { icon: Coffee, label: 'Café da manhã' },
+  { icon: Coffee, label: 'Café da manhã incluso' },
   { icon: Tv, label: 'Smart TV' },
-  { icon: Car, label: 'Estacionamento coberto' },
+  { icon: Car, label: 'Estacionamento para hóspedes' },
   { icon: Building2, label: 'Elevador' },
   { icon: PawPrint, label: 'Aceita pets' },
   { icon: Accessibility, label: 'Recepção 24h' },
@@ -47,7 +47,7 @@ export default function Amenities() {
           </h2>
 
           <p className="mt-7 max-w-md text-sm leading-7 text-white/65">
-            Do check-in ao café da manhã, cada parte da experiência foi desenhada para tornar sua estadia mais leve.
+            Do momento da sua chegada até a hora de partir, cada detalhe do Hotel do Gabriel foi pensado para proporcionar conforto, praticidade e uma estadia agradável.
           </p>
 
           {/* Diferenciais */}

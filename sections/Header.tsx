@@ -17,8 +17,11 @@ export default function Header() {
     <header className="absolute inset-x-0 top-0 z-20 text-white">
       <div className="mx-auto flex max-w-[1320px] items-center justify-between px-6 py-6 lg:px-10">
         <a href="#top" className="group flex items-center gap-3" aria-label="Hotel do Gabriel - início">
-          <span className="flex h-10 w-10 items-center justify-center border border-white/45 font-display text-xl italic transition-colors group-hover:bg-white group-hover:text-[#541f1c]">G</span>
-          <span className="leading-none"><strong className="block font-display text-xl font-medium tracking-[0.16em]">HOTEL</strong><small className="block text-[9px] tracking-[0.39em] text-white/80">DO GABRIEL</small></span>
+          <img
+            src="/images/logo.webp"
+            alt="Hotel do Gabriel"
+            className="h-12 w-[84px] object-contain transition-opacity group-hover:opacity-80"
+          />
         </a>
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((link) => <a key={link.href} href={link.href} className="text-[11px] uppercase tracking-[0.2em] text-white/85 transition-colors hover:text-[#e9c79b]">{link.label}</a>)}

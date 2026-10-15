@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative flex min-h-[680px] items-end overflow-hidden bg-[#381719] md:min-h-[860px]"
     >
       <img
-        src="/images/fachada.jpeg"
+        src="/images/fachada.webp"
         alt="Fachada do Hotel do Gabriel ao entardecer"
         className="absolute inset-0 h-full w-full object-cover object-[58%_20%]"
       />
@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-[#241011]/90 via-transparent to-[#241011]/10" />
       <div className="absolute right-0 top-0 hidden h-full w-[36%] bg-gradient-to-l from-[#241011]/35 to-transparent lg:block" />
 
-      <div className="relative mx-auto w-full max-w-[1320px] px-6 pb-12 pt-32 lg:px-10 lg:pb-14">
+      <div className="relative mx-auto w-full max-w-[1320px] px-6 pb-12 lg:px-10 lg:pb-14">
         <div className="w-full" data-reveal>
           <p className="mb-6 flex items-center gap-3 text-[10px] uppercase tracking-[0.35em] text-[#f2d3a9]">
             <span className="h-px w-10 bg-[#f2d3a9]" />
@@ -30,10 +30,6 @@ export default function Hero() {
             </em>{' '}
             Mauá da Serra.
           </h1>
-
-          <p className="mt-8 max-w-md text-base leading-7 text-white/75">
-            Um hotel novo, acolhedor e prático para quem viaja pela região. Chegue, desacelere e sinta-se em casa.
-          </p>
 
           <div className="mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-7">
             {/* Botão principal: WhatsApp */}
@@ -70,12 +66,9 @@ export default function Hero() {
           className="mt-12 flex flex-col justify-between gap-5 border-t border-white/25 pt-5 text-[10px] uppercase tracking-[0.22em] text-white/70 sm:flex-row"
           data-reveal
         >
-          <span>Conforto na estrada desde 2026</span>
           <span>Av. Ponta Grossa, 845 · Centro</span>
         </div>
       </div>
     </section>
   );
 }
-
-{/* <div className="hidden border border-white/25 bg-[#241011]/55 p-6 backdrop-blur-sm lg:block" data-reveal><p className="text-[10px] uppercase tracking-[0.24em] text-[#e9c79b]">Uma nova estadia</p><div className="my-5 h-px bg-white/20" /><p className="font-display text-3xl leading-none text-white">Conforto para seguir viagem.</p><p className="mt-4 text-xs leading-5 text-white/60">26 unidades · Café da manhã · Estacionamento coberto</p><a href="https://wa.me/5543996677263?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20uma%20reserva%20no%20Hotel%20do%20Gabriel." target="_blank" rel="noreferrer" className="mt-6 block border border-[#e8c193] px-4 py-3 text-center text-[10px] uppercase tracking-[0.15em] text-[#f3d4aa] transition-colors hover:bg-[#e8c193] hover:text-[#351718]">Falar com reservas</a></div> */}

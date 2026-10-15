@@ -1,24 +1,24 @@
 const galleryImages = [
   {
-    src: '/images/restaurante.png',
+    src: '/images/cafemanha2.webp',
     alt: 'Restaurante do Hotel do Gabriel',
-    label: 'Restaurante',
+    label: 'Café da manhã',
     className: 'md:col-span-2 md:row-span-2 aspect-square',
   },
   {
-    src: '/images/accommodations/recep.png',
+    src: '/images/recep.webp',
     alt: 'Recepção do Hotel do Gabriel',
     label: 'Recepção',
     className: 'aspect-square',
   },
   {
-    src: '/images/accommodations/recep1.png',
+    src: '/images/recep1.webp',
     alt: 'Hall e escadaria do hotel',
     label: 'Ambientes',
     className: 'aspect-square',
   },
   {
-    src: '/images/accommodations/quarto2-grid.png',
+    src: '/images/quarto2-grid.png',
     alt: 'Detalhes de uma suíte',
     label: 'Detalhes da suíte',
     className: 'md:col-span-2 aspect-[2/1]',

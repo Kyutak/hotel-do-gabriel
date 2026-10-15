@@ -5,61 +5,37 @@ const rooms = [
     title: 'Suíte Dupla',
     capacity: 'Até 2 hóspedes',
     images: [
-      '/images/accommodations/quarto1.png',
-      '/images/accommodations/quarto1-2.png',
-      '/images/accommodations/banheiro.png',
+      '/images/accommodations/quarto1.webp',
+      '/images/accommodations/quarto1-2.webp',
+      '/images/accommodations/banheiro.webp',
     ],
     beds: '1 cama de casal',
     description:
-      'Este quarto duplo possui ar condicionado, guarda-roupa e TV de tela plana. A unidade tem 1 cama.',
-    price: 'A partir de R$ 160',
-    features: [
-      'Ar-condicionado',
-      'Frigobar',
-      'Smart TV',
-      'Wi-Fi',
-      'Banheiro privativo',
-    ],
+      'Acomodação moderna e aconchegante, ideal para uma ou duas pessoas. Equipada com 1 cama de casal, banheiro privativo, ar-condicionado, frigobar, Smart TV e Wi-Fi, Café da manhã incluso, proporcionando conforto e praticidade durante sua estadia.',
   },
   {
     title: 'Suíte Tripla',
     capacity: 'Até 3 hóspedes',
     images: [
-      '/images/accommodations/quarto3.png',
-      '/images/accommodations/quarto2-2.png',
-      '/images/accommodations/banheiro.png',
+      '/images/accommodations/quarto3.webp',
+      '/images/accommodations/quarto2-2.webp',
+      '/images/accommodations/banheiro.webp',
     ],
     beds: '1 casal + 1 solteiro',
     description:
-      'Este quarto triplo, que inclui uma varanda, também dispõe de ar condicionado, guarda-roupa e TV de tela plana. A unidade possui 2 camas.',
-    price: 'A partir de R$ 290',
-    features: [
-      'Ar-condicionado',
-      'Frigobar',
-      'Smart TV',
-      'Wi-Fi',
-      'Banheiro privativo',
-    ],
+      'Acomodação confortável e espaçosa, ideal para casais, famílias pequenas ou hóspedes a trabalho. Equipada com 1 cama de casal e 1 cama de solteiro, banheiro privativo, ar-condicionado, frigobar, Smart TV e Wi-Fi, Café da manhã incluso, garantindo uma estadia agradável e tranquila.',
   },
   {
     title: 'Suíte Quádrupla',
     capacity: 'Até 4 hóspedes',
     images: [
-      '/images/accommodations/quarto3.png',
-      '/images/accommodations/quarto3-2.png',
-      '/images/accommodations/banheiro.png',
+      '/images/accommodations/quarto3.webp',
+      '/images/accommodations/quarto3-2.webp',
+      '/images/accommodations/banheiro.webp',
     ],
     beds: '1 casal + 2 solteiros',
     description:
-      'Este quarto quádruplo dispõe de ar condicionado, guarda-roupa, TV de tela plana e varanda. A unidade oferece 3 camas.',
-    price: 'A partir de R$ 380',
-    features: [
-      'Ar-condicionado',
-      'Frigobar',
-      'Smart TV',
-      'Wi-Fi',
-      'Banheiro privativo',
-    ],
+      'Acomodação ampla e aconchegante, ideal para famílias ou pequenos grupos. Equipada com 1 cama de casal e 2 camas de solteiro, banheiro privativo, ar-condicionado, frigobar, Smart TV e Wi-Fi, Café da manhã incluso, oferecendo conforto e comodidade para todos os hóspedes.',
   },
 ];
 
@@ -160,7 +136,7 @@ export default function Accommodations() {
                     </span>
 
                     <span className="font-display text-xl text-[#9d6c4b]">
-                      {room.price.replace('A partir de ', '')}
+                      Consulte nossas tarifas
                     </span>
                   </div>
 
@@ -174,20 +150,7 @@ export default function Accommodations() {
                       Instalações
                     </p>
 
-                    <ul className="space-y-3">
-                      {room.features.map((feature) => (
-                        <li
-                          key={feature}
-                          className="flex items-start gap-2.5 text-xs leading-5 text-[#746b63]"
-                        >
-                          <Check
-                            size={14}
-                            className="mt-0.5 shrink-0 text-[#a8754d]"
-                          />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
+                
                   </div>
 
                   {/* Reserva */}
@@ -197,7 +160,7 @@ export default function Accommodations() {
                     rel="noopener noreferrer"
                     className="mt-7 flex min-h-12 items-center justify-between gap-3 border border-[#ad805d] px-4 py-3 text-[10px] font-semibold uppercase tracking-[0.1em] text-[#55332b] transition-colors duration-300 hover:bg-[#55332b] hover:text-white"
                   >
-                    <span>Agendar esta suíte</span>
+                    <span>Consultar disponibilidade</span>
                     <ArrowUpRight size={16} className="shrink-0" />
                   </a>
                 </div>

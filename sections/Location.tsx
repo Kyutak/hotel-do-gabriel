@@ -1,4 +1,4 @@
-import { ArrowUpRight, Clock3, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowUpRight, Clock3, MapPin, Phone } from 'lucide-react';
 
 export default function Location() {
   return (
@@ -23,9 +23,7 @@ export default function Location() {
           </h2>
 
           <p className="mt-8 max-w-lg text-base leading-8 text-[#655c56]">
-            Avenida Ponta Grossa, 845 · Centro
-            <br />
-            Mauá da Serra – Paraná · CEP 86.828-000
+            Avenida Ponta Grossa, 845 – Centro, Mauá da Serra – Paraná, CEP 86828-000.
           </p>
 
           {/* Mapa incorporado no lugar do botão */}
@@ -41,6 +39,14 @@ export default function Location() {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Avenida+Ponta+Grossa%2C+845%2C+Mau%C3%A1+da+Serra%2C+PR"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#8c563d] transition-colors hover:text-[#3b2221]"
+          >
+            Abrir localização no Google Maps <ArrowUpRight size={15} />
+          </a>
         </div>
 
         <div className="grid gap-0 border-t border-[#c5b4a4]" data-reveal>
@@ -86,10 +92,18 @@ export default function Location() {
               </a>
 
               <a
-                href="mailto:restaurante.gabriel.maua@gmail.com"
+                href="mailto:hoteldogabriel@gmail.com"
                 className="block break-all text-sm text-[#74675d] hover:text-[#432b25]"
               >
-                restaurante.gabriel.maua@gmail.com
+                hoteldogabriel@gmail.com
+              </a>
+              <a
+                href="https://www.instagram.com/hoteldogabriel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 block text-sm text-[#74675d] hover:text-[#432b25]"
+              >
+                @hoteldogabriel
               </a>
             </div>
           </div>
@@ -108,9 +122,7 @@ export default function Location() {
               </h3>
 
               <p className="mt-1 text-sm leading-6 text-[#74675d]">
-                Ao lado de um posto de gasolina
-                <br />
-                Estacionamento privativo e coberto
+                Localização privilegiada no centro de Mauá da Serra, com fácil acesso à BR-376 e estacionamento para hóspedes.
               </p>
             </div>
           </div>

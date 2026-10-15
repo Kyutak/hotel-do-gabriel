@@ -5,16 +5,16 @@ const essentials = [
     icon: Coffee,
     title: 'Café da manhã',
     description:
-      'Já está incluso na diária para você começar o dia com sabor e tranquilidade.',
-    image: '/images/restaurante.png',
+      'Comece o dia com sabor e tranquilidade! No Hotel do Gabriel, o café da manhã está incluso na diária, proporcionando mais conforto e praticidade para sua estadia.',
+    image: '/images/cafemanha.webp',
     alt: 'Ambiente do restaurante do Hotel do Gabriel',
   },
   {
     icon: CarFront,
     title: 'Estacionamento para hóspedes',
     description:
-      'Oferecemos estacionamento para os hóspedes, com mais praticidade para quem está viajando.',
-    image: '/images/estacionamento.png',
+      'Pensando na sua comodidade, o Hotel do Gabriel oferece estacionamento para hóspedes, proporcionando mais praticidade e tranquilidade durante sua estadia.',
+    image: '/images/estacionamento.webp',
     alt: 'Estacionamento do Hotel do Gabriel',
   },
 ];
