@@ -18,8 +18,8 @@ export default function Location() {
           <p className="section-kicker">Chegue com facilidade</p>
 
           <h2 className="mt-5 max-w-xl font-display text-5xl leading-[0.95] text-[#382322] sm:text-6xl">
-            No centro de tudo, perto do que{' '}
-            <em className="text-[#9d6c4b]">importa</em>.
+            Bem localizado, pensado para {' '}
+            <em className="text-[#9d6c4b]">você</em>.
           </h2>
 
           <p className="mt-8 max-w-lg text-base leading-8 text-[#655c56]">
