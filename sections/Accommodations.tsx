@@ -26,7 +26,7 @@ const rooms: Room[] = [
     ],
     beds: '1 cama de casal',
     description:
-      'Acomodação moderna e aconchegante, ideal para uma ou duas pessoas. Equipada com 1 cama de casal, banheiro privativo, ar-condicionado, frigobar, Smart TV e Wi-Fi, Café da manhã incluso, proporcionando conforto e praticidade durante sua estadia.',
+      'Acomodação moderna e aconchegante, ideal para uma ou duas pessoas. Equipada com 1 cama de casal, banheiro privativo, ar-condicionado, frigobar, Smart TV e Wi-Fi, proporcionando conforto e praticidade durante sua estadia.',
   },
   {
     title: 'Suíte Tripla',
@@ -38,7 +38,7 @@ const rooms: Room[] = [
     ],
     beds: '1 casal + 1 solteiro',
     description:
-      'Acomodação confortável e espaçosa, ideal para casais, famílias pequenas ou hóspedes a trabalho. Equipada com 1 cama de casal e 1 cama de solteiro, banheiro privativo, ar-condicionado, frigobar, Smart TV e Wi-Fi, Café da manhã incluso, garantindo uma estadia agradável e tranquila.',
+      'Acomodação confortável e espaçosa, ideal para casais, famílias pequenas ou hóspedes a trabalho. Equipada com 1 cama de casal e 1 cama de solteiro, banheiro privativo, ar-condicionado, frigobar, Smart TV e Wi-Fi, garantindo uma estadia agradável e tranquila.',
   },
   {
     title: 'Suíte Quádrupla',
@@ -50,7 +50,7 @@ const rooms: Room[] = [
     ],
     beds: '1 casal + 2 solteiros',
     description:
-      'Acomodação ampla e aconchegante, ideal para famílias ou pequenos grupos. Equipada com 1 cama de casal e 2 camas de solteiro, banheiro privativo, ar-condicionado, frigobar, Smart TV e Wi-Fi, Café da manhã incluso, oferecendo conforto e comodidade para todos os hóspedes.',
+      'Acomodação ampla e aconchegante, ideal para famílias ou pequenos grupos. Equipada com 1 cama de casal e 2 camas de solteiro, banheiro privativo, ar-condicionado, frigobar, Smart TV e Wi-Fi, oferecendo conforto e comodidade para todos os hóspedes.',
   },
 ];
 
