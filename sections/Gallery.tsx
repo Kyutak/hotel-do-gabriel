@@ -35,9 +35,9 @@ const galleryImages: GalleryImage[] = [
     className: 'aspect-square',
   },
   {
-    src: '/images/quarto2-grid.png',
-    alt: 'Detalhes de uma suíte',
-    label: 'Detalhes da suíte',
+    src: '/images/refeitorio.webp',
+    alt: 'Refeitório do Hotel do Gabriel',
+    label: 'Refeitório',
     className: 'aspect-square md:col-span-2 md:aspect-[2/1]',
   },
 ];
@@ -117,8 +117,12 @@ export default function Gallery() {
                       });
                     }
                   }}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+                  className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
+                    image.label === 'Refeitório'
+                      ? 'object-[center_100%]'
+                      : 'object-center'
+                  }`}
+                  />
 
                 {/* Legenda da imagem */}
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#241313]/75 to-transparent px-5 pb-5 pt-12">
